@@ -1,0 +1,82 @@
+/* Sign.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sign-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+}
+
+.sign-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.sign-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.sign-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.sign-form input:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.sign-form button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sign-form button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 480px) {
+  .sign-form {
+    padding: 1.5rem;
+  }
+
+  .sign-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .sign-form input,
+  .sign-form button {
+    font-size: 0.95rem;
+  }
+}
